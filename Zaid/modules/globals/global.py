@@ -13,28 +13,28 @@ ok = []
 async def gban_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
     if message.from_user.id != client.me.id:
-        ex = await message.reply_text("`Gbanning...`")
+        ex = await message.reply_text("`Gbanning...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     else:
-        ex = await message.edit("`Gbanning....`")
+        ex = await message.edit("`Gbanning....⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if not user_id:
-        return await ex.edit("I can't find that user.")
+        return await ex.edit("I can't find that user.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
     if user_id == client.me.id:
-        return await ex.edit("**Okay Done... 🐽**")
+        return await ex.edit("**Okay Done... ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️🐽**")
     if user_id in DEVS:
-        return await ex.edit("**Baap ko Mat sikha 🗿**")
+        return await ex.edit("**Baap ko Mat sikha⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡ 🗿**")
     if user_id:
         try:
             user = await client.get_users(user_id)
         except Exception:
-            return await ex.edit("`Please specify a valid user!`")
+            return await ex.edit("`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
 
     if (await Zaid.gban_info(user.id)):
         return await ex.edit(
-            f"[user](tg://user?id={user.id}) **it's already on the gbanned list**"
+            f"[user](tg://user?id={user.id}) **it's already on the gbanned list⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
         )
     f_chats = await get_ub_chats(client)
     if not f_chats:
-        return await ex.edit("**You don't have a GC that you admin 🥺**")
+        return await ex.edit("**You don't have a GC that you admin 🥺⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
     er = 0
     done = 0
     for gokid in f_chats:
@@ -60,16 +60,16 @@ async def gban_user(client: Client, message: Message):
 async def ungban_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
     if message.from_user.id != client.me.id:
-        ex = await message.reply("`UnGbanning...`")
+        ex = await message.reply("`UnGbanning...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     else:
-        ex = await message.edit("`UnGbanning....`")
+        ex = await message.edit("`UnGbanning....⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if not user_id:
-        return await ex.edit("I can't find that user.")
+        return await ex.edit("I can't find that user.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
     if user_id:
         try:
             user = await client.get_users(user_id)
         except Exception:
-            return await ex.edit("`Please specify a valid user!`")
+            return await ex.edit("`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
 
     try:
         if not (await Zaid.gban_info(user.id)):
@@ -77,7 +77,7 @@ async def ungban_user(client: Client, message: Message):
         ung_chats = await get_ub_chats(client)
         ok.remove(user.id)
         if not ung_chats:
-            return await ex.edit("**You don't have a Group that you admin 🥺**")
+            return await ex.edit("**You don't have a Group that you admin 🥺⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
         er = 0
         done = 0
         for good_boi in ung_chats:
@@ -104,9 +104,9 @@ async def ungban_user(client: Client, message: Message):
 @Client.on_message(filters.command("listgban", ".") & filters.me)
 async def gbanlist(client: Client, message: Message):
     users = (await Zaid.gban_list())
-    ex = await message.edit_text("`Processing...`")
+    ex = await message.edit_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if not users:
-        return await ex.edit("No Users have been Banned yet")
+        return await ex.edit("No Users have been Banned yet⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
     gban_list = "**GBanned Users:**\n"
     count = 0
     for i in users:
@@ -119,36 +119,36 @@ async def gbanlist(client: Client, message: Message):
 async def gmute_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
-    ex = await message.edit_text("`Processing...`")
+    ex = await message.edit_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            await ex.edit(f"`Please specify a valid user!`")
+            await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
             return
     elif reply:
         user_id = reply.from_user.id
         user = await client.get_users(user_id)
     else:
-        await ex.edit(f"`Please specify a valid user!`")
+        await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         return
     if user.id == client.me.id:
-        return await ex.edit("**Okay Sure.. 🐽**")
+        return await ex.edit("**Okay Sure.. ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️🐽**")
     if user.id in DEVS:
-        return await ex.edit("**Baap Ko mat sikha 🗿**")
+        return await ex.edit("**Baap Ko mat sikha ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️🗿**")
     try:
         replied_user = reply.from_user
         if replied_user.is_self:
-            return await ex.edit("`Calm down anybob, you can't gmute yourself.`")
+            return await ex.edit("`Calm down anybob, you can't gmute yourself.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     except BaseException:
         pass
 
     try:
         if (await Gmute.is_gmuted(user.id)):
-            return await ex.edit("`User already gmuted`")
+            return await ex.edit("`User already gmuted⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         await Gmute.gmute(user.id)
         ok.append(user.id)
-        await ex.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gmuted!")
+        await ex.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gmuted!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
         try:
             common_chats = await client.get_common_chats(user.id)
             for i in common_chats:
@@ -165,30 +165,30 @@ async def gmute_user(client: Client, message: Message):
 async def ungmute_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
-    ex = await message.edit_text("`Processing...`")
+    ex = await message.edit_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            await ex.edit(f"`Please specify a valid user!`")
+            await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
             return
     elif reply:
         user_id = reply.from_user.id
         user = await client.get_users(user_id)
     else:
-        await ex.edit(f"`Please specify a valid user!`")
+        await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         return
 
     try:
         replied_user = reply.from_user
         if replied_user.is_self:
-            return await ex.edit("`Calm down anybob, you can't ungmute yourself.`")
+            return await ex.edit("`Calm down anybob, you can't ungmute yourself.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     except BaseException:
         pass
 
     try:
         if not (await Gmute.is_gmuted(user.id)):
-            return await ex.edit("`User already ungmuted`")
+            return await ex.edit("`User already ungmuted⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         await Gmute.ungmute(user.id)
         ok.remove(user.id)
         try:
@@ -198,7 +198,7 @@ async def ungmute_user(client: Client, message: Message):
         except BaseException:
             pass
         await ex.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) globally ungmuted!"
+            f"[{user.first_name}](tg://user?id={user.id}) globally ungmuted!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         )
     except Exception as e:
         await ex.edit(f"**ERROR:** `{e}`")
@@ -208,9 +208,9 @@ async def ungmute_user(client: Client, message: Message):
 @Client.on_message(filters.command("listgmute", ".") & filters.me)
 async def gmutelist(client: Client, message: Message):
     users = (await Gmute.gmute_list())
-    ex = await message.edit_text("`Processing...`")
+    ex = await message.edit_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if not users:
-        return await ex.edit("There are no Muted Users yet")
+        return await ex.edit("There are no Muted Users yet⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
     gmute_list = "**GMuted Users:**\n"
     count = 0
     for i in users:
