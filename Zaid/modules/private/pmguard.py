@@ -32,10 +32,10 @@ def get_arg(message):
 async def pmguard(client, message):
     arg = get_arg(message)
     if not arg:
-        await message.edit("**Set limit to what?**")
+        await message.edit("**Set limit to what?⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
         return
     await Zaid.set_limit(int(arg))
-    await message.edit(f"**Limit set to {arg}**")
+    await message.edit(f"**Limit set to {arg}⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
 
 
 
@@ -43,14 +43,14 @@ async def pmguard(client, message):
 async def setpmmsg(client, message):
     arg = get_arg(message)
     if not arg:
-        await message.edit("**What message to set**")
+        await message.edit("**What message to set⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
         return
     if arg == "default":
         await Zaid.set_block_message(Zaid.BLOCKED)
-        await message.edit("**Block message set to default**.")
+        await message.edit("**Block message set to default⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**.")
         return
     await Zaid.set_block_message(f"`{arg}`")
-    await message.edit("**Custom block message set**")
+    await message.edit("**Custom block message set⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
 
 
 @Client.on_message(filters.command(["allow", "ap", "approve", "a"], ["."]) & filters.me & filters.private)
