@@ -13,14 +13,14 @@ import Zaid.database.pmpermitdb as Zaid
 async def pmguard(client, message):
     arg = get_arg(message)
     if not arg:
-        await message.edit("**I only understand on or off**")
+        await message.edit("**I only understand on or off⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
         return
     if arg == "off":
         await Zaid.set_pm(False)
-        await message.edit("**PM Guard Deactivated**")
+        await message.edit("**PM Guard Deactivated⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
     if arg == "on":
         await Zaid.set_pm(True)
-        await message.edit("**PM Guard Activated**")
+        await message.edit("**PM Guard Activated⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
 @Client.on_message(filters.command("setpmmsg", ["."]) & filters.me)
 async def setpmmsg(client, message):
     arg = get_arg(message)
@@ -29,10 +29,10 @@ async def setpmmsg(client, message):
         return
     if arg == "default":
         await Zaid.set_permit_message(Zaid.PMPERMIT_MESSAGE)
-        await message.edit("**Anti_PM message set to default**.")
+        await message.edit("**Anti_PM message set to default⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**.")
         return
     await Zaid.set_permit_message(f"`{arg}`")
-    await message.edit("**Custom anti-pm message set**")
+    await message.edit("**Custom anti-pm message set⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**")
 
 
 add_command_help(
