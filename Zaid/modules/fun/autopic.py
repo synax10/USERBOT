@@ -54,7 +54,7 @@ async def autopic_zaid(_, m):
     arc = await eor(m, "...")
     if bool(__XOR):
         __XOR[0].cancel()
-        t = "`Autopic Stopped Successfully.`"
+        t = "`Autopic Stopped Successfully.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`"
         __XOR.clear()
     else:
         _task = _autopic(_, delay=300)
