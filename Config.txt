@@ -10,12 +10,12 @@ SUDO_USERS = list(map(int, ("").split()))
 OWNER_ID = int(1234567890)
 MONGO_URL = "MONGO_URL"
 BOT_TOKEN = "BOT_TOKEN"
-ALIVE_PIC = 'https://telegra.ph/file/89f23433043a4bfa255c3.jpg'
+ALIVE_PIC = 'https://telegra.ph/file/a32783a91999e9774054a.jpg'
 ALIVE_TEXT = None
 PM_LOGGER = None
 LOG_GROUP = None
 GIT_TOKEN = None #personal access token
-REPO_URL = "https://github.com/itszshivam/OP-USERBOT2"
+REPO_URL = "https://github.com/synax10/USERBOT"
 BRANCH = "master" #don't change
  
 STRING_SESSION1 = ""
