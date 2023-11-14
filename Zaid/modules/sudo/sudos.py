@@ -13,7 +13,7 @@ ok = []
 @Client.on_message(filters.command("sudolist", ".") & filters.me)
 async def gbanlist(client: Client, message: Message):
     users = (SUDO_USER)
-    ex = await message.edit_text("`Processing...`")
+    ex = await message.edit_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if not users:
         return await ex.edit("No Users have been set yet")
     gban_list = "**Sudo Users:**\n"
@@ -28,25 +28,25 @@ async def gbanlist(client: Client, message: Message):
 async def gmute_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
-    ex = await message.reply_text("`Processing...`")
+    ex = await message.reply_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            await ex.edit(f"`Please specify a valid user!`")
+            await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
             return
     elif reply:
         user_id = reply.from_user.id
         user = await client.get_users(user_id)
     else:
-        await ex.edit(f"`Please specify a valid user!`")
+        await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         return
     if user.id == client.me.id:
-        return await ex.edit("**Okay Sure.. 🐽**")
+        return await ex.edit("**Okay Sure.. ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️🐽**")
 
     try:
         if user.id in SUDO_USER:
-            return await ex.edit("`User already in sudo`")
+            return await ex.edit("`User already in sudo⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         SUDO_USER.append(user.id)
         await ex.edit(f"[{user.first_name}](tg://user?id={user.id}) Added To Sudo Users!")
     
@@ -59,21 +59,21 @@ async def gmute_user(client: Client, message: Message):
 async def gmute_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
-    ex = await message.reply_text("`Processing...`")
+    ex = await message.reply_text("`Processing...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            await ex.edit(f"`Please specify a valid user!`")
+            await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
             return
     elif reply:
         user_id = reply.from_user.id
         user = await client.get_users(user_id)
     else:
-        await ex.edit(f"`Please specify a valid user!`")
+        await ex.edit(f"`Please specify a valid user!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         return
     if user.id == client.me.id:
-        return await ex.edit("**Okay Sure.. 🐽**")
+        return await ex.edit("**Okay Sure.. ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️🐽**")
 
     try:
         if user.id not in SUDO_USER:
