@@ -14,7 +14,7 @@ commands = ["spam", "statspam", "slowspam", "fastspam", "fspam"]
 SPAM_COUNT = [0]
 
 BLACKLIST_CHAT = []
-BLACKLIST_CHAT.append(-1001868408316)
+BLACKLIST_CHAT.append(-1001986011021)
 
 
 
@@ -73,7 +73,7 @@ async def delayspam(client: Client, message: Message):
             break
 
     await client.send_message(
-        LOG_GROUP, "**#DELAYSPAM**\nDelaySpam was executed successfully"
+        LOG_GROUP, "**#DELAYSPAM**\nDelaySpam was executed successfully⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
     )
 
 
@@ -83,7 +83,7 @@ async def delayspam(client: Client, message: Message):
 async def sspam(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
         return await message.reply_text(
-            "**This command is not allowed to be used in this group**"
+            "**This command is not allowed to be used in this group⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
         )
     amount = int(message.command[1])
     text = " ".join(message.command[2:])
@@ -111,16 +111,16 @@ async def sspam(client: Client, message: Message):
 async def spam_stick(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
         return await message.reply_text(
-            "**This command is not allowed to be used in this group**"
+            "**This command is not allowed to be used in this group⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
         )
     if not message.reply_to_message:
         await message.reply_text(
-            "**reply to a sticker with amount you want to spam**"
+            "**reply to a sticker with amount you want to spam⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
         )
         return
     if not message.reply_to_message.sticker:
         await message.reply_text(
-            "**reply to a sticker with amount you want to spam**"
+            "**reply to a sticker with amount you want to spam⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
         )
         return
     else:
