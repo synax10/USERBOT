@@ -1,43 +1,20 @@
-### 🌷𝐕𝐈𝐒𝐈𝐓𝐎𝐑𝐒🌷
+<p align="center"><a href="https://t.me/synax10"><img src="https://telegra.ph/file/a32783a91999e9774054a.jpg"></a></p>
 
-<!--
-**itszshivam/itszshivam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+━━━━━━━━━━━━━━━━━━━━━━
 
+# ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+ᴛʜɪs ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ's ʀᴇᴘᴏ, 
 
-<p align="center">
-    <b>ᴠɪsɪᴛᴏʀs</b><br>
- -->    <img align="middle" src="https://profile-counter.glitch.me/itszshivam/count.svg" />
-</p>
+ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴜs ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs  [⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️](https://t.me/synax10)
 
-<p align="center">◉ 𝐎𝐕𝐄𝐑 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 ◉ 𝕌𝕊𝔼ℝ𝔹𝕆𝕋 ✨ </p>
+━━━━━━━━━━━━━━━━━━━━━━
+# Dᴇᴘʟᴏʏ Oɴ Hᴇʀᴏᴋᴜ​ 🚀
+ㅤㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-- The First Telegram Userbot Project With Multi Clients Based On PyroGram
+- ⚠️ Do not forget to fork this repo. Else error can occur in deployment.
 
-<p align="center"><a href="https://t.me/fun_here"><img src="https://telegra.ph/file/89f23433043a4bfa255c3.jpg" width="300"></a></p>
-<p align="center">
-    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
-
-
-
-## Requirements 
-
-- PyroGram Session
-- Dummy account
-- Python 3.8+ or 3.7
-- [Mongo Db](https://youtu.be/mnvjt_a5JYA)
-
-## String Session
-
-<p align="center"><a href="https://replit.com/@Itz-zaid/pyrogram"> <img src="https://img.shields.io/badge/String%20Session-black?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
-
-
-## 𝐃𝐄𝐏𝐋𝐎𝐘𝐌𝐄𝐍𝐓𝐒
-
-ᴛᴏ ʙᴇ ꜱᴀꜰᴇ! ꜰɪʀꜱᴛʟʏ ꜰᴏʀᴋ ᴛʜɪꜱ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴘʀᴇꜱꜱ ᴅᴇᴘʟᴏʏ ʙᴜᴛᴛᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ꜰᴏʀᴋᴇᴅ ʀᴇᴘᴏ.😜 
-
-[ꜰᴏʀᴋᴇᴅ ᴅᴇᴘʟᴏʏ ɪꜱ ʜɪɢʜʟʏ ʀᴇᴄᴏᴍᴍᴇɴᴅᴇᴅ ʜᴇʀᴇ](https://telegra.ph/file/89f23433043a4bfa255c3.jpg)
-
-<p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/itszshivam/OP-USERBOT2"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="left"><a href="https://dashboard.heroku.com/new?template=https://github.com/synax10/USERBOT"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-cyan?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+━━━━━━━━━━━━━━━━━━━━━━
 
 ## Features 
 
@@ -64,12 +41,3 @@ and you ended up in a Finale Battle with Telegram and at the end
         for getting your acoount deleted?
     I will be rolling on the floor laughing at you.
 ```
-
-
-
-## Support / Channel
-
-<p align="center">𝐒𝐮𝐩𝐩𝐨𝐫𝐭 / 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ----> </p>
-
-<p align="center"><a href="https://t.me/fun_here"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-𝐒𝐮𝐩𝐩𝐨𝐫𝐭-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
-<p align="center"><a href="https://t.me/about_skshivam"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-𝐔𝐩𝐝𝐚𝐭𝐞𝐬-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
