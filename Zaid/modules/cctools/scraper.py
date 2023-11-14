@@ -7,7 +7,7 @@ from Zaid import SUDO_USER
 
 
 _SCRTXT = """
-**✅ CC Scrapped Successfully!**
+**✅ CC Scrapped Successfully!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**
 
 **Source ->** {}
 **Amount ->** {}
@@ -16,7 +16,7 @@ _SCRTXT = """
 
 
 🥷 **Scrapped By ->** {}
-👨‍🎤 **Developed By ->** @ITSZ_SHIVAM ❤
+👨‍🎤 **Developed By ->** @synax10
 """
 
 
@@ -29,7 +29,7 @@ async def cc_scraper(c, m):
     spl = m.text.split(" ")
     e3 = await m.reply_text("...", quote=True)
     if not spl:
-        return await e3.edit("full cmd de vai.. 😔")
+        return await e3.edit("full cmd de vai.. 😔⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
     elif len(spl) == 2:
         _chat = spl[1].strip()
         limit = 100
@@ -38,7 +38,7 @@ async def cc_scraper(c, m):
         try:
             limit = int(spl[2].strip())
         except ValueError:
-            return await e3.edit("No. of card to Scrape must be Integer!")
+            return await e3.edit("No. of card to Scrape must be Integer!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
 
     await e3.edit(f"`Scrapping from {_chat}. \nHold your Horses...`")
     _get = lambda m: getattr(m, "text", 0) or getattr(m, "caption", 0)
