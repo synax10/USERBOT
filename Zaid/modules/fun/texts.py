@@ -42,7 +42,7 @@ async def cock(bot: Client, message: Message):
 async def slap(bot: Client, message: Message):
     if message.reply_to_message is None:
         await message.edit(
-            "`WHO SHOULD I SLAP?`"
+            "`WHO SHOULD I SLAP?⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`"
         )
         await asyncio.sleep(5)
         await message.delete()
@@ -69,7 +69,7 @@ async def slap(bot: Client, message: Message):
             await message.edit(caption)
         except Exception:
             await message.edit(
-                "`Can't slap this person, need to fetch some sticks and stones!!`"
+                "`Can't slap this person, need to fetch some sticks and stones!!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`"
             )
 
 
@@ -190,7 +190,7 @@ async def weebify(bot: Client, message: Message):
     elif message.reply_to_message and len(cmd) == 1:
         raw_text = message.reply_to_message.text
     elif not message.reply_to_message and len(cmd) == 1:
-        await message.edit(f"`{weebify_text('Could not weebify...')}`")
+        await message.edit(f"`{weebify_text('Could not weebify...⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')}`")
         await asyncio.sleep(2)
         await message.delete()
         return
@@ -208,7 +208,7 @@ async def vapor(bot: Client, message: Message):
     elif message.reply_to_message and len(cmd) == 1:
         vapor_text = message.reply_to_message.text
     elif not message.reply_to_message and len(cmd) == 1:
-        await message.edit("`Ｇｉｖｅ ｓｏｍｅ ｔｅｘｔ ｆｏｒ ｖａｐｏｒ！`")
+        await message.edit("`Ｇｉｖｅ ｓｏｍｅ ｔｅｘｔ ｆｏｒ ｖａｐｏｒ！⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         await asyncio.sleep(2)
         await message.delete()
         return
@@ -236,7 +236,7 @@ async def stretch(bot: Client, message: Message):
     elif message.reply_to_message and len(cmd) == 1:
         stretch_text = message.reply_to_message.text
     elif not message.reply_to_message and len(cmd) == 1:
-        await message.edit("`Giiiiiiiv sooooooomeeeeeee teeeeeeext!`")
+        await message.edit("`Giiiiiiiv sooooooomeeeeeee teeeeeeext!⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️`")
         await asyncio.sleep(2)
         await message.delete()
         return
@@ -330,7 +330,7 @@ async def flip_text(bot: Client, message):
 
 @Client.on_message(filters.me & filters.command('silence', '.'))
 async def silence_wench(bot: Client, message):
-    await message.edit("Silence wench. Do not speak of the forbidden scripture to me. I was there when it was written.")
+    await message.edit("Silence wench. Do not speak of the forbidden scripture to me. I was there when it was written.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
 
 
 
