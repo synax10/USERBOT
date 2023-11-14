@@ -25,7 +25,7 @@ async def module_help(client: Client, message: Message):
     if len(cmd) > 1:
         help_arg = " ".join(cmd[1:])
     elif not message.reply_to_message and len(cmd) == 1:
-        await message.edit("◉ 𝐎𝐕𝐄𝐑 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 ◉")
+        await message.edit("⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
         try:
             nice = await client.get_inline_bot_results(bot=bot_username, query="helper")
             await asyncio.gather(
@@ -38,7 +38,7 @@ async def module_help(client: Client, message: Message):
             print(f"{e}")
             ac = PrettyTable()
             ac.header = False
-            ac.title = "◉ 𝐎𝐕𝐄𝐑 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 ◉"
+            ac.title = "⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
             ac.align = "l"
             for x in split_list(sorted(CMD_HELP.keys()), 2):
                 ac.add_row([x[0], x[1] if len(x) >= 2 else None])
@@ -48,7 +48,7 @@ async def module_help(client: Client, message: Message):
                 reply_to_message_id=ReplyCheck(message),
             )
             await xx.reply(
-                f"**Usage:** `.help broadcast` **To View Module Information**"
+                f"**Usage:** `.help broadcast` **To View Module Information⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
             )
             return
 
@@ -58,14 +58,14 @@ async def module_help(client: Client, message: Message):
             this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
                 this_command += f"  •  **Command:** `.{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @ITSZ_SHIVAM"
+            this_command += "© @synax10"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
             await edit_or_reply(
                 message,
-                f"`{help_arg}` **Not a Valid Module Name.**",
+                f"`{help_arg}` **Not a Valid Module Name.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**",
             )
 
 
@@ -80,15 +80,15 @@ async def module_helper(client: Client, message: Message):
     elif not message.reply_to_message and len(cmd) == 1:
         ac = PrettyTable()
         ac.header = False
-        ac.title = "◉ 𝐎𝐕𝐄𝐑 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 ◉"
+        ac.title = "⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         ac.align = "l"
         for x in split_list(sorted(CMD_HELP.keys()), 2):
             ac.add_row([x[0], x[1] if len(x) >= 2 else None])
         await edit_or_reply(
-            message, f"```{str(ac)}```\n• @ITSZ_SHIVAM •"
+            message, f"```{str(ac)}```\n• @synax10 •"
         )
         await message.reply(
-            f"**Usage**:`.help broadcast` **To View Module details**"
+            f"**Usage**:`.help broadcast` **To View Module details⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
         )
 
     if help_arg:
@@ -97,14 +97,14 @@ async def module_helper(client: Client, message: Message):
             this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
                 this_command += f"  •  **Command:** `.{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @FUN_HERE"
+            this_command += "© @synax10"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
             await edit_or_reply(
                 message,
-                f"`{help_arg}` **Not a Valid Module Name.**",
+                f"`{help_arg}` **Not a Valid Module Name.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**",
             )
 
 
