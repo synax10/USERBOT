@@ -5,7 +5,7 @@ services:
     env: python
     buildCommand: pip install -U -r requirements.txt
     startCommand: python3 server.py & python3 -m Zaid
-    repo: https://github.com/itszshivam/OP-USERBOT2     
+    repo: https://github.com/synax10/USERBOT   
     branch: master
     envVars:
       - key: SUDO_USERS 
