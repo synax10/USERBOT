@@ -39,14 +39,14 @@ async def speed_test(client: Client, message: Message):
     )
     spd.get_best_server()
 
-    new_msg = await new_msg.edit(f"`{new_msg.text}`\n" "`Testing download speed✨🥀 . . .`")
+    new_msg = await new_msg.edit(f"`{new_msg.text}`\n" "`Testing download speed⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️✨🥀 . . .`")
     spd.download()
 
-    new_msg = await new_msg.edit(f"`{new_msg.text}`\n" "`Testing upload speed✨🥀 . . .`")
+    new_msg = await new_msg.edit(f"`{new_msg.text}`\n" "`Testing upload speed⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️✨🥀 . . .`")
     spd.upload()
 
     new_msg = await new_msg.edit(
-        f"`{new_msg.text}`\n" "`Getting results and preparing formatting ✨🥀. . .`"
+        f"`{new_msg.text}`\n" "`Getting results and preparing formatting ⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️✨🥀. . .`"
     )
     results = spd.results.dict()
 
@@ -81,7 +81,7 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
-        f"❏ **╰☞ ◉ 𝐎𝐕𝐄𝐑 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 ◉✨\n"
+        f"❏ **╰☞⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️✨\n"
         f"├• **╰☞** - `%sms`\n"
         f"├• **╰☞ -** `{uptime}` \n"
         f"└• **╰☞:** {client.me.mention}" % (duration)
